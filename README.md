@@ -43,27 +43,7 @@ pip install lumicks.pylake numpy pandas matplotlib scipy pyperclip
 
 ---
 
-## The distance → nucleotide conversion
 
-Both scripts convert the raw distance signal to nucleotides unwound with the same
-linear rescaling:
-
-```python
-dist1 = ((dist1 - 6.07) / (12.06 - 6.07)) * 17853
-dist1 = dist1 - dist1[0]   # zero to the start of the trace
-```
-
-- `6.07` and `12.06` are the distance values (µm) corresponding to the fully
-  double-stranded and fully single-stranded ends of the substrate, respectively.
-- `17853` is the total length of the DNA substrate in nucleotides.
-- The final subtraction sets the starting point of each trace to zero nt.
-
-**These three numbers are substrate- and calibration-specific.** Update them to match
-your own construct length and force/extension calibration before analyzing new data.
-The conversion is based on the Bustamante worm-like-chain description of ssDNA
-extension.
-
----
 
 ## Usage
 
