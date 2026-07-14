@@ -5,7 +5,8 @@ optical-tweezers (C-trap) data collected on the **LUMICKS** platform.
 
 Raw traces are read from LUMICKS `.h5` files, the trap-to-trap distance is converted
 into **nucleotides (nt) unwound**, and the resulting time traces are plotted, exported,
-and (optionally) analyzed for **unwinding length** and **pausing behavior**.
+and (optionally) analyzed for **unwinding length** and **pausing behavior**. Raw traces for testing the script can be located at 10.5281/zenodo.21363054.
+
 
 ---
 
